@@ -4,7 +4,7 @@
   "description": "assignment2 backend",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon --ignore react1/* --exec babel-node index.js"
   },
   "author": "271110962",
   "license": "ISC",
