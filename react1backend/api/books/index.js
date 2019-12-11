@@ -14,6 +14,16 @@ router.get('/home', asyncHandler(async(req, res) => {
 }));
 
 
+router.get('/book/:id', asyncHandler(async(req, res) => {
+  try{
+    const book = await Book.findOne({publishdate:req.params.id});
+    return res.status(200).json(book);
+  }catch (error) {
+    handleError(res, error.message);
+  }
+}));
+
+
 router.put('/home/:id', asyncHandler(async(req, res) => {
   if(req.body._id) delete req.body._id;
   const book = await Book.update({
