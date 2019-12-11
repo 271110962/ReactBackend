@@ -1,4 +1,4 @@
-# BSc (Hons.) Level 8 - Assignment 1 - Library web page.
+# BSc (Hons.) Level 8 - Assignment 2 - Backend for the Library web page.
 
 Name: Jinyu Chen
 
