@@ -29,7 +29,7 @@ JSON document data model
 
 . . . . there are 3 routes and associated modeling(Mongoose)integrated with React application allowing manipulation of resources: update, read and delete
 
-![](img/stories.PNG
+![](img/2.PNG)
 
 
 ## Backend (Optional).
