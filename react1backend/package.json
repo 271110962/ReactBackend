@@ -4,22 +4,35 @@
   "description": "assignment2 backend",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ignore react1/* --exec babel-node index.js"
+    "start": "nodemon --ignore react1/* --exec babel-node index.js",
+    "test": "cross-env NODE_ENV=test mocha --require babel-core/register --require babel-polyfill --reporter mochawesome",
+    "pretest": "eslint *.js ./api/books/*.js ./test/*.js"
   },
   "author": "271110962",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
-    "nodemon": "^2.0.1"
+    "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
+    "mockgoose": "^8.0.4",
+    "nodemon": "^2.0.1",
+    "should": "^13.2.3",
+    "sinon": "^7.5.0",
+    "sinon-test": "^2.4.1",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "save-dev": "0.0.1-security"
   }
 }

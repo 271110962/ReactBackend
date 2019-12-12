@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-12-12T23:08:34.740Z",
+    "end": "2019-12-12T23:08:41.406Z",
+    "duration": 6666,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a10e9519-d772-4b44-8459-b5171a2e83c8",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4f492375-b426-4a10-96a4-5d5617e67b47",
+          "title": "Books API test",
+          "fullFile": "C:\\Users\\as083\\Desktop\\Year3\\Backend\\react1backend\\test\\testBooksApi.js",
+          "file": "\\test\\testBooksApi.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return collection of JSON documents",
+              "fullTitle": "Books API test should return collection of JSON documents",
+              "timedOut": false,
+              "duration": 4487,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _supertest2.default)(_index.app).get('/api/books/home').expect('Content-type', /json/).expect(200).then(function (res) {\n    res.should.have.property('status').equal(200);\n    done();\n});",
+              "err": {},
+              "uuid": "8572230f-31bb-459d-bdac-542fe509989c",
+              "parentUUID": "4f492375-b426-4a10-96a4-5d5617e67b47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should update a book",
+              "fullTitle": "Books API test should update a book",
+              "timedOut": false,
+              "duration": 2010,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _supertest2.default)(_index.app).put('/api/books/home/' + book.id).send(book).expect('Content-type', /json/).expect(200).then(function (res) {\n    done();\n});",
+              "err": {},
+              "uuid": "cf8f5eca-ca70-45be-990d-937651d5d333",
+              "parentUUID": "4f492375-b426-4a10-96a4-5d5617e67b47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should delete a book",
+              "fullTitle": "Books API test should delete a book",
+              "timedOut": false,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _supertest2.default)(_index.app).delete('/api/books/home/' + book.id).expect(204).then(function (res) {\n    res.status.should.equal(204);\n    done();\n});",
+              "err": {},
+              "uuid": "5dbfee35-0baa-4c35-95a3-156f4c702d18",
+              "parentUUID": "4f492375-b426-4a10-96a4-5d5617e67b47",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8572230f-31bb-459d-bdac-542fe509989c",
+            "cf8f5eca-ca70-45be-990d-937651d5d333",
+            "5dbfee35-0baa-4c35-95a3-156f4c702d18"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6527,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 120000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.1"
+    }
+  }
+}

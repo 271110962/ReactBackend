@@ -3,17 +3,12 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import contactsRouter from './api/books';
 import './db';
-import loadBook from './booksData';
 
 dotenv.config();
 
-const app = express();
+export const app = express();
 
 const port = process.env.PORT;
-
-if (process.env.seedDb) {
-  loadBook();
-}
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
